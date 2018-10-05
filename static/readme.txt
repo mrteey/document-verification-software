@@ -1,0 +1,1 @@
+This is where all our static files; css, js and required images go.

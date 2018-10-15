@@ -34,6 +34,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-size: 14px;
   font-weight: 700;
+  color: #333;
 }
 
 h1 {
@@ -46,6 +47,10 @@ h3 {
 
 h4 {
   font-size: 28px;
+}
+
+h5 {
+  font-size: 20px;
 }
 
 p {
@@ -69,10 +74,11 @@ html, body {
   display: block;
   position: relative;
   background-color: #fff;
+  background-image: url("../imgs/5.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 0vw 0;
+  background-position: 0vw -15vh;
 }
 
 header {
@@ -89,12 +95,13 @@ header {
   border-bottom: 1px solid #eee;
   position: fixed;
   z-index: 999;
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
 }
 
 header .logoArea {
   width: 25%;
   height: 55px;
-  background: #33cc66;
 }
 
 header nav {
@@ -195,12 +202,13 @@ section.hero h1 {
   text-align: center;
   line-height: 65px;
   font-weight: 900;
+  font-family: sans-serif;
 }
 
 section.hero h4 {
   width: 60%;
-  margin-bottom: 30px;
-  color: #111;
+  margin-bottom: 60px;
+  color: #333;
   font-weight: 300;
   text-align: center;
 }
@@ -254,14 +262,71 @@ section.hero span.cta button:last-child:hover {
 
 section.users {
   width: 100%;
-  height: 80%;
+  height: 90%;
   background: #fff;
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.users h3 {
+  width: 100%;
+  text-align: center;
+}
+
+section.users .usersWrap {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+section.users .usersWrap .user {
+  width: 46%;
+  height: 450px;
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.users .usersWrap .user img {
+  width: 100%;
+}
+
+section.users .usersWrap .user h5 {
+  width: 100%;
+  height: 50px;
+  border: 1px solid greenyellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

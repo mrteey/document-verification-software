@@ -16,7 +16,7 @@
     }
 
     // sort out the transitions + specify vendor prefixes
-    $('.fullBackground')
+    $('.wrapper')
       .css('background-image', 'url(' + settings.images[settings.current] + ')')
       .css('-webkit-transition', + settings.transitionTime + 's ease-in-out')
       .css('-moz-transition', + settings.transitionTime + 'ms ease-in-out')
@@ -34,7 +34,7 @@
     // change the background image
     (function update() {
       settings.current = (settings.current + 1) % settings.images.length;
-        $('.fullBackground').css('background-image', 'url(' + settings.images[settings.current] + ')');
+        $('.wrapper').css('background-image', 'url(' + settings.images[settings.current] + ')');
         setTimeout(update, settings.wait);
     }());
 }}(jQuery));

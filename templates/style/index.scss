@@ -390,7 +390,58 @@ section.feedBack{
   width: 100%;
   height: 95%;
   padding: 0;
+  display: flex;
+  flex-direction: column;
   background: $SecondaryColor;
+  background-size: cover;
+  box-shadow: 0px 0px 2px rgba($color: #000000, $alpha: 0.1);
+  h3{
+    width:100%;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 0px 2px rgba($color: #000000, $alpha: 0.4);
+    margin-top: 35px;
+  }
+}
+.feedbackWrap{
+    // border:1px solid #000;
+    width:100%;
+    flex:1;
+    display: flex;
+    @include top();
+    flex-direction: column;
+    margin-top: 35px;
+}
+.feedbackSocial{
+    // border:1px solid #000;
+    width:100%;
+    height:10%;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    margin-top: auto;
+    .twitter{
+      flex: 1;
+      background: #55acee;
+    }
+    .facebook{
+      flex: 1;
+      background: #3b5998;
+    }
+    .google{
+      flex: 1;
+      background: #d34836;
+    }
+}
+
+// ********* Feedback Area ****************
+section.footer{
+  width: 100%;
+  height: 40%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
   background-size: cover;
   box-shadow: 0px 0px 2px rgba($color: #000000, $alpha: 0.1);
 }

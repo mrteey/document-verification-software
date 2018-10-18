@@ -514,6 +514,14 @@ section.feedBack {
   width: 100%;
   height: 95%;
   padding: 0;
+  background: url("../imgs/contactBGred.png") no-repeat;
+  background-size: 100%;
+}
+
+.feedbackContainers {
+  width: 100%;
+  height: 100%;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -521,13 +529,13 @@ section.feedBack {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #ff3366;
+  background: rgba(255, 51, 102, 0.9);
   background-size: cover;
   -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
 }
 
-section.feedBack h3 {
+.feedbackContainers h3 {
   width: 100%;
   text-align: center;
   color: #fff;
@@ -546,7 +554,7 @@ section.feedBack h3 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 25px;
+  padding: 25px 25px 25px 40px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -577,7 +585,7 @@ section.feedBack h3 {
 }
 
 .feedbackWrap form li input {
-  border-bottom: 1px solid #fff;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
   color: #fff;
   width: 100%;
   height: 100%;
@@ -624,8 +632,8 @@ section.feedBack h3 {
   max-height: 100%;
   min-height: 100%;
   background: transparent;
-  border: 1px solid #fff;
-  border-radius: 6px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 2px;
   outline: none;
   color: #fff;
   font-size: 18px;
@@ -639,17 +647,67 @@ section.feedBack h3 {
 .feedbackWrap form li:last-child button {
   width: 100%;
   height: 100%;
-  border-radius: 3px;
+  border-radius: 2px;
   background: #fff;
   color: #ff3366;
   font-size: 18px;
 }
 
+.feedbackWrap form li:last-child button:hover {
+  background: #f5003d;
+  color: #fff;
+}
+
 .feedbackWrap span {
   display: block;
-  border: 1px solid #fff;
   width: 35%;
   height: 90%;
+}
+
+.feedbackWrap span ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feedbackWrap span ul li {
+  width: 100%;
+  height: 50px;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.feedbackWrap span ul li i {
+  display: block;
+  min-width: 50px;
+  font-size: 42px;
+  color: #fff;
+  margin-right: 22px;
+  text-align: center;
+}
+
+.feedbackWrap span ul li p {
+  font-size: 24px;
+  color: #fff;
+  text-align: left;
 }
 
 .feedbackSocial {

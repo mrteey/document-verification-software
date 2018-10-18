@@ -506,18 +506,18 @@ section.feedBack{
           display: flex;
           @include left();
           @include vCenter();
-          margin-bottom: 24px;
+          margin-bottom: 16px;
           i{
             display: block;
             min-width: 50px;
-            font-size: 42px;
+            font-size: 32px;
             color: #fff;
-            margin-right: 22px;
+            margin-right: 16px;
             // border:1px solid #fff;
             text-align: center;
           }
           p{
-            font-size: 24px;
+            font-size: 20px;
             color: #fff;
             text-align: left;
           }

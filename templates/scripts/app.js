@@ -1,9 +1,18 @@
-// LOGO SWITCH
+
 $(window).scroll(function() {
   var hT = $('.feedBack').offset().top,
       hH = $('.feedBack').outerHeight(),
       wH = $(window).height(),
       wS = $(this).scrollTop();
+  
+  // HEADER MOD
+  if (wS > 50){
+    $('#header')[0].style.backgroundColor="#fff";
+  }else if(wS < 50){
+    $('#header')[0].style.backgroundColor="rgba(255, 255, 255, 0.2)";
+  }
+
+  // LOGO SWITCH
   if (wS > (hT+hH-wH)){
     $('.logoArea>img')[0].src = 'http://127.0.0.1:5500/templates/imgs/verifrLogoInverted.png';
   }

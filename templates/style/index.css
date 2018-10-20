@@ -91,7 +91,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.4);
   border-bottom: 1px solid #eee;
   position: fixed;
   z-index: 999;
@@ -585,7 +585,7 @@ section.feedBack {
 }
 
 .feedbackWrap form li input {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.2);
   color: #fff;
   width: 100%;
   height: 100%;
@@ -623,7 +623,7 @@ section.feedBack {
 }
 
 .feedbackWrap form li:nth-child(3) {
-  height: 70%;
+  height: 50%;
 }
 
 .feedbackWrap form li:nth-child(3) textarea {
@@ -633,12 +633,36 @@ section.feedBack {
   max-height: 100%;
   min-height: 100%;
   background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 2px;
   outline: none;
   color: #fff;
   font-size: 18px;
   padding: 8px;
+}
+
+.feedbackWrap form li:nth-child(3) textarea::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 16px;
+  text-align: left;
+}
+
+.feedbackWrap form li:nth-child(3) textarea:-ms-input-placeholder {
+  color: #fff;
+  font-size: 16px;
+  text-align: left;
+}
+
+.feedbackWrap form li:nth-child(3) textarea::-ms-input-placeholder {
+  color: #fff;
+  font-size: 16px;
+  text-align: left;
+}
+
+.feedbackWrap form li:nth-child(3) textarea::placeholder {
+  color: #fff;
+  font-size: 16px;
+  text-align: left;
 }
 
 .feedbackWrap form li:last-child {
@@ -713,7 +737,7 @@ section.feedBack {
 
 section.footer {
   width: 100%;
-  height: 40%;
+  height: 25%;
   padding: 0;
   background: url("../imgs/footerBG.png") no-repeat;
   background-size: 100%;
@@ -738,20 +762,37 @@ section.footer {
 
 .footerWrap .top {
   width: 100%;
-  height: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .footerWrap .top .links {
-  width: 40%;
+  width: 45%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footerWrap .top .links a {
+  background: #ff3366;
+  padding: 8px 16px;
+  margin-left: 14px;
+  color: #fff;
+  border-radius: 2px;
+  font-size: 14px;
+}
+
+.footerWrap .top .links a:hover {
+  background: #fff;
+  color: #ff3366;
 }
 
 .footerWrap .top .socialIcons {
@@ -774,7 +815,23 @@ section.footer {
 
 .footerWrap .mid {
   width: 100%;
-  height: 40%;
+  height: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-self: flex-end;
+  margin-top: auto;
+}
+
+.footerWrap .mid .subscribe {
+  width: 55%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -786,13 +843,13 @@ section.footer {
           justify-content: center;
 }
 
-.footerWrap .mid p {
-  font-size: 24px;
+.footerWrap .mid .subscribe p {
+  font-size: 18px;
 }
 
-.footerWrap .mid form {
-  width: 40%;
-  height: 60%;
+.footerWrap .mid .subscribe form {
+  width: 60%;
+  height: 100%;
   border: 2px solid #33cc66;
   margin-left: 20px;
   display: -webkit-box;
@@ -800,34 +857,34 @@ section.footer {
   display: flex;
 }
 
-.footerWrap .mid form input {
+.footerWrap .mid .subscribe form input {
   width: 70%;
   height: 100%;
   padding: 0 12px;
   outline: none;
 }
 
-.footerWrap .mid form input::-webkit-input-placeholder {
+.footerWrap .mid .subscribe form input::-webkit-input-placeholder {
   color: #999;
-  font-size: 18px;
+  font-size: 14px;
 }
 
-.footerWrap .mid form input:-ms-input-placeholder {
+.footerWrap .mid .subscribe form input:-ms-input-placeholder {
   color: #999;
-  font-size: 18px;
+  font-size: 14px;
 }
 
-.footerWrap .mid form input::-ms-input-placeholder {
+.footerWrap .mid .subscribe form input::-ms-input-placeholder {
   color: #999;
-  font-size: 18px;
+  font-size: 14px;
 }
 
-.footerWrap .mid form input::placeholder {
+.footerWrap .mid .subscribe form input::placeholder {
   color: #999;
-  font-size: 18px;
+  font-size: 14px;
 }
 
-.footerWrap .mid form button {
+.footerWrap .mid .subscribe form button {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -845,14 +902,35 @@ section.footer {
   border-radius: 0;
 }
 
-.footerWrap .mid form button i {
+.footerWrap .mid .subscribe form button i {
   color: #fff;
   font-size: 18px;
-  margin-right: 12px;
+  margin-right: 8px;
 }
 
-.footerWrap .mid form button p {
+.footerWrap .mid .subscribe form button p {
   color: #fff;
   font-size: 16px;
+}
+
+.footerWrap .mid .copyRight {
+  width: 30%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.footerWrap .mid .copyRight p {
+  color: #666;
+  font-size: 14px;
 }
 /*# sourceMappingURL=index.css.map */

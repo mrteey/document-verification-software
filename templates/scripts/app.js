@@ -1,3 +1,13 @@
+$('.loginButton').click(function(){
+  $('.popupWrapper').fadeIn(1000, function(){
+    $('.loginBox').css('margin-top', '0');
+  });
+});
+$('.closeToggle').click(function(){
+  $('.popupWrapper').fadeOut(500, function(){
+    $('.loginBox').css('margin-top', '0');
+  });
+});
 
 $(window).scroll(function() {
   var hT = $('.feedBack').offset().top,
@@ -14,17 +24,43 @@ $(window).scroll(function() {
 
   // LOGO SWITCH
   if (wS > (hT+hH-wH)){
-    $('.logoArea>img')[0].src = 'http://127.0.0.1:5500/templates/imgs/verifrLogoInverted.png';
+    $('.logoArea>img')[0].src = 'http://127.0.0.1:5500/templates/imgs/logo/verifrLogoInverted.png';
   }
   if (wS < (hT+hH-wH)){
-    $('.logoArea>img')[0].src = 'http://127.0.0.1:5500/templates/imgs/verifrLogo.png';
+    $('.logoArea>img')[0].src = 'http://127.0.0.1:5500/templates/imgs/logo/verifrLogo.png';
   }
 });
 
 
 // HERO BACKGROUND IMAGE SCROLL
 $('.wrapper').fullClip({
-  images: ['imgs/2.jpg', 'imgs/3.jpg', 'imgs/4.jpg', 'imgs/1.jpg'],
+  images: ['imgs/bgScroll/2.jpg', 'imgs/bgScroll/3.jpg', 'imgs/bgScroll/4.jpg', 'imgs/bgScroll/1.jpg'],
   transitionTime: 2000,
   wait: 5000
+});
+
+$('.formRight>form').submit(function(e){
+  e.preventDefault();
+  if($('.formRight>form>li>input').val() == ''){
+    alert('You need to enter your details');
+  }else{
+    // alert('Submitted!');
+    $('.formRight>form>li>button')[0].innerHTML='<i class="fas fa-sync fa-spin"></i>';
+  }
+});
+
+$('.formRight>form>li>input').focus(function(){
+  $('.formRight>form>li>label').css({
+    'font-size': '12px',
+    'margin-top': '-10%'
+  });
+});
+$('.formRight>form>li>input').blur(function(){
+  if($(this).val() == ''){
+  $('.formRight>form>li>label').css({
+    'font-size': '16px',
+    'margin-top': '0'
+  });
+  $(this).val('');
+  }
 });

@@ -88,7 +88,7 @@ html, body{
   display: block;
   position: relative;
   background-color: #fff ;
-  background-image: url('../imgs/1.jpg');
+  background-image: url('../imgs/bgScroll/1.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -263,20 +263,20 @@ section.users{
     }
     .institute{
       .img{
-        background: url('../imgs/graduateInverted.jpg') no-repeat;
+        background: url('../imgs/users/graduateInverted.jpg') no-repeat;
         background-size: cover;
         &:hover{
-          background: url('../imgs/graduate.jpg') no-repeat;
+          background: url('../imgs/users/graduate.jpg') no-repeat;
           background-size: cover;
         }
       }
     }
     .employer{
       .img{
-        background: url('../imgs/employerInverted.jpg') no-repeat;
+        background: url('../imgs/users/employerInverted.jpg') no-repeat;
         background-size: cover;
         &:hover{
-          background: url('../imgs/employer.jpg') no-repeat;
+          background: url('../imgs/users/employer.jpg') no-repeat;
           background-size: cover;
         }
       }
@@ -290,7 +290,7 @@ section.partners{
   width: 100%;
   height: 95%;
   padding: 0;
-  background: url('../imgs/partnersBG.png') no-repeat;
+  background: url('../imgs/bg/partnersBG.png') no-repeat;
   background-size: cover;
   box-shadow: 0px 0px 2px rgba($color: #000000, $alpha: 0.1);
 
@@ -391,7 +391,7 @@ section.feedBack{
   width: 100%;
   height: 95%;
   padding: 0;
-  background: url('../imgs/contactBGred.png') no-repeat;
+  background: url('../imgs/bg/contactBGred.png') no-repeat;
   background-size: 100%;
 }
 .feedbackContainers{
@@ -539,7 +539,7 @@ section.footer{
   width: 100%;
   height: 25%;
   padding: 0;
-  background: url('../imgs/footerBG.png') no-repeat;
+  background: url('../imgs/bg/footerBG.png') no-repeat;
   background-size: 100%;
 }
   
@@ -655,4 +655,158 @@ section.footer{
       }
     }
   }
+}
+
+.popupWrapper{
+  width:100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: url('../imgs/bg/littleGirl.jpg') no-repeat;
+  background-size: 100%;
+  background-position-y: -200px;
+  display: none;
+  .popupContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    @include Center();
+    background-color: rgba($color: $PrimaryColor, $alpha: 0.8);
+  }
+  .loginBox{
+    margin-top: -95%;
+    width:80%;
+    height: 85%;
+    background-color: rgba($color: #fff, $alpha: 0.6);
+    border-radius: 12px;
+    box-shadow: 0px 0px 8px rgba($color: #000000, $alpha: 0.2);
+    display: flex;
+    position: relative;
+    .closeToggle{
+      position: absolute;
+      top:10px;
+      right: 10px;
+      font-size: 26px;
+      color: black;
+      padding: 0 5px;
+      // border:1px solid #000;
+      &:hover{
+        cursor: pointer;
+        color: red;
+      }
+    }
+    .infoLeft{
+      flex:1;
+      // width:50%;
+      // height: 100%;
+      background: url('../imgs/bg/girlWriting.jpg') no-repeat;
+      background-size: auto 100%;
+      border-radius: 12px 0 0 12px;
+      position: relative;
+      img{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        border-radius: 12px 12px 12px 0;
+      }
+    }
+    .formRight{
+      flex:1;
+      display: flex;
+      @include Center();
+      form{
+        background: rgba($color: #fff, $alpha: 0.1);
+        padding: 12px 18px;
+        width: 75%;
+        height: 75%;
+        display: flex;
+        flex-direction: column;
+        li{
+          width: 90%;
+          min-height: 8%;
+          margin-bottom: 10px;
+          display: flex;
+          &:first-child{
+            margin-bottom: 98px;
+            flex-direction: column;
+            h3{
+              color: $SecondaryColor;
+            }
+          }
+          &:nth-child(2), &:nth-child(3){
+            margin-bottom: 36px;
+            position: relative;
+            height: 12%;
+            border-bottom:2px solid $SecondaryColor;
+            @include vCenter();
+            label{
+              position: absolute;
+              height: 100%;
+              display: flex;
+              @include Center();
+            }
+            input{
+              z-index: 2;
+              width:90%;
+              height: 100%;
+              // border: 1px solid green;
+              outline: none;
+              font-size: 16px;
+            }
+            i{
+              flex:1;
+              display: block;
+              // border:1px solid red;
+              text-align: center;
+              font-size: 22px;
+            }
+          }
+          // &:nth-child(3){
+          //   margin-bottom: 12px;
+          // }
+          &:nth-child(4), &:nth-child(5){
+            @include Center();
+            height: 20%!important;
+            // border:2px solid red;
+            
+            button{
+              display: block;
+              width: 60%;
+              height: 100%;
+              outline: none;
+              // border:1px solid #fff;
+              &:first-child{
+                background: $SecondaryColor;
+                color: #fff;
+                font-size: 16px;
+              }
+            }
+          }
+          &:nth-child(5){
+            button{
+              &:first-child{
+                background: transparent;
+                color: $SecondaryColor;
+                border: 2px solid $SecondaryColor;
+              }
+            }
+          }
+          &:last-child{
+            // background: #000;
+            margin-top: 20px;
+            @include Center();
+            a{
+              text-align: center;
+              font-size: 14px;
+              color: $SecondaryColor;
+            }
+          }
+          
+        }
+      }
+    }
+  }
+
 }

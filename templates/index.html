@@ -6,9 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style/index.css">
   <link rel="stylesheet" href="style/fonts/font-awesome/css/all.css">
-  <script src="scripts/jquery-3.3.1.min.js"></script>
-  <script src="scripts/fullclip.js"></script>
-  <script src="scripts/app.js"></script>
   <title>Document Verification Software</title>
 </head>
 <body>
@@ -17,7 +14,7 @@
     <!-- Header Area -->
     <header id="header">
       <div class="logoArea">
-        <img src="imgs/verifrLogo.png" alt="logo">
+        <img src="imgs/logo/verifrLogo.png" alt="logo">
       </div>
       <nav>
         <a href="#">Home</a>
@@ -26,14 +23,14 @@
       </nav>
       <div class="signButtons">
           <button>Join</button>
-          <button>Login</button>
+          <button class="loginButton">Login</button>
       </div>
     </header>
 
     <!-- Hero Area -->
     <section class="hero">
       <h1>VERIFICATION PLATFORM</h1>
-      <h4>With Verifyr online verification platform, you can validate the Authenticity of a Document in few clicks</h4>
+      <h4>With Verifyr online verification platform, you can validate the Authenticity of a Document using our digital stamp.</h4>
       <span class="cta">
         <button>See How it Works</button>
         <button>Register Today</button>
@@ -62,27 +59,27 @@
         <div class="partnersWrap">
           <ul>
             <li>
-              <img src="imgs/abu.png" alt="#">
+              <img src="imgs/partners/abu.png" alt="#">
               <p>ABU Zaria</p>
               <sub>Tertiary Institution</sub>
             </li>
             <li>
-              <img src="imgs/buk-logo.jpg" alt="#">
+              <img src="imgs/partners/buk-logo.jpg" alt="#">
               <p>Bayero University Kano</p>
               <sub>Tertiary Institution</sub>
             </li>
             <li>
-              <img src="imgs/zik.png" alt="#">
+              <img src="imgs/partners/zik.png" alt="#">
               <p>Nnamdi Azikiwe University</p>
               <sub>Tertiary Institution</sub>
             </li>
             <li>
-              <img src="imgs/command.jpg" alt="#">
+              <img src="imgs/partners/command.jpg" alt="#">
               <p>Command School Abuja</p>
               <sub>Secondary School</sub>
             </li>
             <li>
-                <img src="imgs/port.jpg" alt="#">
+                <img src="imgs/partners/port.jpg" alt="#">
                 <p>University of Portharcourt</p>
                 <sub>Tertiary Institution</sub>
               </li>
@@ -183,7 +180,48 @@
           </div>
           
     </section>
-  </div>
 
+    <div class="popupWrapper">
+      <div class="popupContainer">
+        <div class="loginBox">
+          <div class="closeToggle">&times;</div>
+          <div class="infoLeft">
+            <img src="imgs/logo/verifrLogo.png" alt="logo">
+          </div>
+          <div class="formRight">
+            <form action="">
+              <li>
+                <h3>Log In</h3>
+                <sub>Enter your login details</sub>
+              </li>
+              <li>
+                <label for="email">Your Email</label>
+                <input type="email" name="email" id="email">
+                <i class="fas fa-envelope"></i>
+              </li>
+              <li>
+                <label for="password">Your Password</label>
+                <input type="password" name="password" id="password">
+                <i class="fas fa-lock"></i>
+              </li>
+              <li>
+                <button>Log In</button>
+              </li>
+              <li>
+                <button>Sign Up</button>
+              </li>
+              <li>
+                <a href="#">Forgot your password?</a>
+              </li>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="scripts/jquery-3.3.1.min.js"></script>
+  <script src="scripts/fullclip.js"></script>
+  <script src="scripts/app.js"></script>
 </body>
 </html>

@@ -24,17 +24,17 @@ $(window).scroll(function() {
 
   // LOGO SWITCH
   if (wS > (hT+hH-wH)){
-    $('.logoArea>img')[0].src = 'http://127.0.0.1:5500/templates/imgs/logo/verifrLogoInverted.png';
+    $('.logoArea>img')[0].src = '/static/imgs/logo/verifrLogoInverted.png';
   }
   if (wS < (hT+hH-wH)){
-    $('.logoArea>img')[0].src = 'http://127.0.0.1:5500/templates/imgs/logo/verifrLogo.png';
+    $('.logoArea>img')[0].src = '/static/imgs/logo/verifrLogo.png';
   }
 });
 
 
 // HERO BACKGROUND IMAGE SCROLL
 $('.wrapper').fullClip({
-  images: ['imgs/bgScroll/2.jpg', 'imgs/bgScroll/3.jpg', 'imgs/bgScroll/4.jpg', 'imgs/bgScroll/1.jpg'],
+  images: ['/static/imgs/bgScroll/2.jpg', '/static/imgs/bgScroll/3.jpg', '/static/imgs/bgScroll/4.jpg', '/static/imgs/bgScroll/1.jpg'],
   transitionTime: 2000,
   wait: 5000
 });

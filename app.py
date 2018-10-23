@@ -15,6 +15,10 @@ def index():
 #in about-us the template we could just return the main about-us content to be replaced with.
 @app.route('/about-us')
 def about_us():
+    '''
+    This route sends request to the database for the content of the About table.
+    Data returned to the db gets passed to the about-us.html template.
+    '''
     return render_template('about-us.html')
 
 #Finally we run the app, __name__ == __main__ means if we are accessing this file directly

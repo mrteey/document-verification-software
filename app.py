@@ -21,6 +21,14 @@ def about_us():
     '''
     return render_template('about-us.html')
 
+
+@app.route('/faqs')
+def faqs():
+    '''
+    This route sends request to the database for the content of the About table.
+    Data returned to the db gets passed to the about-us.html template.
+    '''
+    return render_template('faqs.html')
 #Finally we run the app, __name__ == __main__ means if we are accessing this file directly
 #It is currently on debug mode, to help us catch any error that may come up while the app runs
 #The debug mode will be removed when we are on production so that our users don't get to see our errors

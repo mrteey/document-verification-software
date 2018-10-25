@@ -9,6 +9,7 @@ $('.closeToggle').click(function(){
   });
 });
 
+
 $(window).scroll(function() {
   var hT = $('.feedBack').offset().top,
       hH = $('.feedBack').outerHeight(),

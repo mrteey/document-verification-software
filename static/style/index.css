@@ -734,6 +734,238 @@ section.feedBack {
   text-align: left;
 }
 
+section.aboutUsHeading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 60%;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 40px;
+}
+
+section.aboutUsHeading h1 {
+  font-family: sans-serif;
+  font-size: 70px;
+  color: #ff3366;
+}
+
+section.aboutUsContent {
+  width: 100%;
+  height: 70%;
+  background: #fff;
+  padding: 5% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.aboutUsContent p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 22px;
+  color: #999;
+  line-height: 36px;
+  text-align: justify;
+  padding: 20px;
+}
+
+section.aboutUsContent img {
+  width: 40%;
+}
+
+section.AboutMissionVision {
+  width: 100%;
+  height: 70%;
+  background: #33cc66;
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.AboutMissionVision .statement {
+  width: 48%;
+  height: 100%;
+}
+
+section.AboutMissionVision .statement h2 {
+  color: #fff;
+  font-size: 48px;
+  text-align: center;
+}
+
+section.AboutMissionVision .statement p {
+  color: #fff;
+  font-size: 22px;
+  text-align: justify;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0 0px;
+}
+
+section.AboutMissionVision .statement i {
+  font-size: 32px;
+  color: #279b4e;
+}
+
+section.AboutTeam {
+  width: 100%;
+  height: 100%;
+  background: #fafafa;
+  padding: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+section.AboutTeam h2 {
+  width: 100%;
+  height: 15%;
+  color: #ff3366;
+  font-size: 48px;
+  text-align: center;
+  margin: 0 0 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.AboutTeam .teamWrap {
+  height: 70%;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  -webkit-box-sizing: content-box !important;
+          box-sizing: content-box !important;
+}
+
+section.AboutTeam .teamWrap .teamContain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 8.5px 0 8.5px 0;
+  -webkit-box-sizing: content-box !important;
+          box-sizing: content-box !important;
+}
+
+section.AboutTeam .teamWrap .teamContain .card {
+  width: 100px;
+  min-width: 300px;
+  height: 100%;
+  margin-right: 20px;
+  color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.AboutTeam .teamWrap .teamContain .card .passport {
+  width: 220px;
+  height: 220px;
+  margin: 0 0 5% 0;
+  border-radius: 50%;
+  border: 6px solid #c6f1d4;
+}
+
+section.AboutTeam .teamWrap .teamContain .card .passport img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+section.AboutTeam .teamWrap .teamContain .card p {
+  width: 100%;
+  height: 5%;
+  text-align: center;
+}
+
+section.AboutTeam .teamWrap .teamContain .card h3 {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  font-size: 32px;
+}
+
+section.AboutTeam .teamWrap .teamContain .card .socialHandles {
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 6px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.AboutTeam .teamWrap .teamContain .card .socialHandles i {
+  margin: 0 6px;
+  font-size: 24px;
+  color: #33cc66;
+}
+
+section.AboutTeam .teamWrap .teamContain .card .socialHandles i:hover {
+  cursor: pointer;
+  color: #ff3366;
+}
+
 section.footer {
   width: 100%;
   height: 25%;

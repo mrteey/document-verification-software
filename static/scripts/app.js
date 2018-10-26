@@ -10,20 +10,24 @@ $('.closeToggle').click(function(){
 });
 
 
+// HEADER MOD
+$(window).scroll(function() {
+var winHeight = $(this).scrollTop();
+if (winHeight > 50){
+  $('#header')[0].style.backgroundColor="#fff";
+}else if(winHeight < 50){
+  $('#header')[0].style.backgroundColor="rgba(255, 255, 255, 0.2)";
+}
+});
+
+
+  // LOGO SWITCH
 $(window).scroll(function() {
   var hT = $('.feedBack').offset().top,
       hH = $('.feedBack').outerHeight(),
       wH = $(window).height(),
       wS = $(this).scrollTop();
-  
-  // HEADER MOD
-  if (wS > 50){
-    $('#header')[0].style.backgroundColor="#fff";
-  }else if(wS < 50){
-    $('#header')[0].style.backgroundColor="rgba(255, 255, 255, 0.2)";
-  }
 
-  // LOGO SWITCH
   if (wS > (hT+hH-wH)){
     $('.logoArea>img')[0].src = '/static/imgs/logo/verifrLogoInverted.png';
   }

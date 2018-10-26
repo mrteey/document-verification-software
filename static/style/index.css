@@ -893,8 +893,8 @@ section.AboutTeam .teamWrap .teamContain {
 
 section.AboutTeam .teamWrap .teamContain .card {
   width: 100px;
-  min-width: 300px;
-  height: 100%;
+  min-width: 250px;
+  height: 80%;
   margin-right: 20px;
   color: #333;
   display: -webkit-box;
@@ -913,8 +913,8 @@ section.AboutTeam .teamWrap .teamContain .card {
 }
 
 section.AboutTeam .teamWrap .teamContain .card .passport {
-  width: 220px;
-  height: 220px;
+  width: 250px;
+  height: 250px;
   margin: 0 0 5% 0;
   border-radius: 50%;
   border: 6px solid #c6f1d4;

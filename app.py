@@ -4,6 +4,21 @@ from flask import Flask, request, render_template
 #Instantiate a Flask app and assign it to a variable app, this could be any name, but Heroku (Our potential hosting company requires that the variable be app)
 app = Flask(__name__)
 
+
+# prevent cached responses
+@app.after_request
+def add_header(r):
+    """
+    Add headers to both force latest IE rendering engine or Chrome Frame,
+    and also to cache the rendered page for 10 minutes.
+    """
+    r.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
+    r.headers["Pragma"] = "no-cache"
+    r.headers["Expires"] = "0"
+    r.headers['Cache-Control'] = 'public, max-age=0'
+    return r
+
+
 #This is the route that points to the app's index page
 @app.route('/')
 def index():

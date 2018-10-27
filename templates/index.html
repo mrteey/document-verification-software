@@ -5,8 +5,8 @@
       <h1>VERIFICATION PLATFORM</h1>
       <h4>With Verifyr online verification platform, you can validate the Authenticity of a Document using our digital stamp.</h4>
       <span class="cta">
-        <button>See How it Works</button>
-        <button>Register Today</button>
+        <button>See how it works</button>
+        <button>Register with us</button>
       </span>
     </section>
 
@@ -109,5 +109,15 @@
         </div>
 
     </section>
+
+
+{% include 'landing-footer.html' %}
+<script>
+  // HERO BACKGROUND IMAGE SCROLL
+  $('.wrapper').fullClip({
+    images: ['/static/imgs/bgScroll/2.jpg', '/static/imgs/bgScroll/3.jpg', '/static/imgs/bgScroll/4.jpg', '/static/imgs/bgScroll/1.jpg'],
+    transitionTime: 2000,
+    wait: 5000
+  });
+</script>
     
-    {% include 'landing-footer.html' %}

@@ -42,6 +42,7 @@ li{
 }
 button{
   border-radius: 2px;
+  outline: none;
   &:hover{
     cursor: pointer;
   }
@@ -88,7 +89,7 @@ html, body{
   display: block;
   position: relative;
   background-color: #fff ;
-  background-image: url('../imgs/bgScroll/1.jpg');
+  background-image: url('../imgs/bgScroll/4.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -655,8 +656,8 @@ section.AboutTeam{
         flex-direction: column;
         @include Center();
         .passport{
-          width: 250px;
-          height: 250px;
+          width: 210px;
+          height: 210px;
           margin: 0 0 5% 0;
           border-radius: 50%;
           border: 6px solid lighten($color: $PrimaryColor, $amount: 36);
@@ -668,22 +669,24 @@ section.AboutTeam{
         }
         p{
           width:100%;
-          height: 5%;
+          // height: 5%;
           text-align: center;
+          // border:1px solid #333;
         }
         h3{
           width:100%;
-          height: 10%;
+          // height: 10%;
           text-align: center;
           font-size: 32px;
+          // border:1px solid #333;
         }
         .socialHandles{
-          height: 10%;
+          // height: 10%;
           width: 100%;
           text-align: center;
           display: flex;
           // border:1px solid #333;
-          margin-top:6px;
+          // margin-top:6px;
           @include Center();
           i{
             margin: 0 6px;
@@ -700,6 +703,79 @@ section.AboutTeam{
 }
 
 }
+
+
+
+// ********* FAQs ****************
+section.faqsWrap{
+  width: 100%;
+  min-height: 80%;
+  background: #fafafa;
+  background: url('../imgs/bg/faqBG.png') no-repeat;
+  background-size: 100%;
+  // border:2px solid red;
+  display: flex;
+  flex-direction: column;
+  padding: 4%;
+  h4{
+    width:100%;
+    // border:1px solid purple;
+    margin-bottom: 20px;
+  }
+  ul{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    li{
+      width:100%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      // border:1px solid pink;
+      .faqTitle{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        @include vCenter();
+        justify-content: space-between;
+        // border:1px solid green;
+        padding: 20px;
+        background: #fafafa;
+        button{
+          background: #fff;
+          padding: 8px 10px;
+          color: $PrimaryColor;
+        }
+      }
+      .faqBody{
+        width: 100%;
+        padding: 0px;
+        background: #fff;
+        height: auto;
+        // border: 1px solid red;
+        overflow: hidden;
+        .answr{
+          font-size: 18px;
+          font-weight: bold;
+          // width: 96%;
+          // border:1px solid #ccc;
+          padding: 20px 20px 0 20px;
+          color: $SecondaryColor;
+        }
+        p{
+          font-size: 16px;
+          color: #666;
+          text-align: justify;
+          // width: 96%;
+          // border:1px solid #111;
+          padding: 0px 20px 20px 20px;
+        }
+      }
+    }
+  }
+}
+
 
 
 // ********* Footer Area ****************

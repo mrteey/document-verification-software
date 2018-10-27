@@ -17,6 +17,7 @@ li {
 
 button {
   border-radius: 2px;
+  outline: none;
 }
 
 button:hover {
@@ -74,7 +75,7 @@ html, body {
   display: block;
   position: relative;
   background-color: #fff;
-  background-image: url("../imgs/bgScroll/1.jpg");
+  background-image: url("../imgs/bgScroll/4.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -913,8 +914,8 @@ section.AboutTeam .teamWrap .teamContain .card {
 }
 
 section.AboutTeam .teamWrap .teamContain .card .passport {
-  width: 250px;
-  height: 250px;
+  width: 210px;
+  height: 210px;
   margin: 0 0 5% 0;
   border-radius: 50%;
   border: 6px solid #c6f1d4;
@@ -928,25 +929,21 @@ section.AboutTeam .teamWrap .teamContain .card .passport img {
 
 section.AboutTeam .teamWrap .teamContain .card p {
   width: 100%;
-  height: 5%;
   text-align: center;
 }
 
 section.AboutTeam .teamWrap .teamContain .card h3 {
   width: 100%;
-  height: 10%;
   text-align: center;
   font-size: 32px;
 }
 
 section.AboutTeam .teamWrap .teamContain .card .socialHandles {
-  height: 10%;
   width: 100%;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 6px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -964,6 +961,98 @@ section.AboutTeam .teamWrap .teamContain .card .socialHandles i {
 section.AboutTeam .teamWrap .teamContain .card .socialHandles i:hover {
   cursor: pointer;
   color: #ff3366;
+}
+
+section.faqsWrap {
+  width: 100%;
+  min-height: 80%;
+  background: #fafafa;
+  background: url("../imgs/bg/faqBG.png") no-repeat;
+  background-size: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4%;
+}
+
+section.faqsWrap h4 {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+section.faqsWrap ul {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.faqsWrap ul li {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+section.faqsWrap ul li .faqTitle {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  background: #fafafa;
+}
+
+section.faqsWrap ul li .faqTitle button {
+  background: #fff;
+  padding: 8px 10px;
+  color: #33cc66;
+}
+
+section.faqsWrap ul li .faqBody {
+  width: 100%;
+  padding: 0px;
+  background: #fff;
+  height: auto;
+  overflow: hidden;
+}
+
+section.faqsWrap ul li .faqBody .answr {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px 20px 0 20px;
+  color: #ff3366;
+}
+
+section.faqsWrap ul li .faqBody p {
+  font-size: 16px;
+  color: #666;
+  text-align: justify;
+  padding: 0px 20px 20px 20px;
 }
 
 section.footer {

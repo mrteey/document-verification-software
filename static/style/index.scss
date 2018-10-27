@@ -78,6 +78,9 @@ p{
 section {
   padding: 20px;
 }
+html {
+  scroll-behavior: smooth;
+}
 html, body{
   width:100%;
   height: 100%;
@@ -266,20 +269,20 @@ section.users{
       .img{
         background: url('../imgs/users/graduateInverted.jpg') no-repeat;
         background-size: cover;
-        &:hover{
-          background: url('../imgs/users/graduate.jpg') no-repeat;
-          background-size: cover;
-        }
+      }
+      .graduateInverted{
+        background: url('../imgs/users/graduate.jpg') no-repeat;
+        background-size: cover;
       }
     }
     .employer{
       .img{
         background: url('../imgs/users/employerInverted.jpg') no-repeat;
         background-size: cover;
-        &:hover{
-          background: url('../imgs/users/employer.jpg') no-repeat;
-          background-size: cover;
-        }
+      }
+      .employerInverted{
+        background: url('../imgs/users/employer.jpg') no-repeat;
+        background-size: cover;
       }
     }
   }
@@ -710,8 +713,7 @@ section.AboutTeam{
 section.faqsWrap{
   width: 100%;
   min-height: 80%;
-  background: #fafafa;
-  background: url('../imgs/bg/faqBG.png') no-repeat;
+  background: #fafafa url('../imgs/bg/faqBG.png') no-repeat;
   background-size: 100%;
   // border:2px solid red;
   display: flex;

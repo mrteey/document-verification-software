@@ -21,6 +21,34 @@ jQuery(document).ready(function($){
   }
   });
 
+  // USERS IMG MOD
+  $('.user>div').first().hover(
+    function() {
+      $(this).fadeOut('fast', 'linear', function(){
+        $(this).toggleClass( "graduateInverted" );
+        $(this).fadeIn()
+      });
+    }, function() {
+      $(this).fadeOut('fast', 'linear', function(){
+        $(this).toggleClass( "graduateInverted" );
+        $(this).fadeIn()
+      });
+    }
+  );
+  $('.user>div').last().hover(
+    function() {
+      $(this).fadeOut('fast', 'linear', function(){
+        $(this).toggleClass( "employerInverted" );
+        $(this).fadeIn()
+      });
+    }, function() {
+      $(this).fadeOut('fast', 'linear', function(){
+        $(this).toggleClass( "employerInverted" );
+        $(this).fadeIn()
+      });
+    }
+  );
+
 
     // LOGO SWITCH
   $(window).scroll(function() {

@@ -24,27 +24,27 @@ jQuery(document).ready(function($){
   // USERS IMG MOD
   $('.user>div').first().hover(
     function() {
-      $(this).fadeOut('fast', 'linear', function(){
+      $(this).fadeOut('slow', 'linear', function(){
         $(this).toggleClass( "graduateInverted" );
-        $(this).fadeIn()
+        $(this).show();
       });
     }, function() {
-      $(this).fadeOut('fast', 'linear', function(){
+      $(this).fadeOut('slow', function(){
         $(this).toggleClass( "graduateInverted" );
-        $(this).fadeIn()
+        $(this).show();
       });
     }
   );
   $('.user>div').last().hover(
     function() {
-      $(this).fadeOut('fast', 'linear', function(){
+      $(this).fadeOut('slow', function(){
         $(this).toggleClass( "employerInverted" );
-        $(this).fadeIn()
+        $(this).show();
       });
     }, function() {
-      $(this).fadeOut('fast', 'linear', function(){
+      $(this).fadeOut('slow', function(){
         $(this).toggleClass( "employerInverted" );
-        $(this).fadeIn()
+        $(this).show();
       });
     }
   );

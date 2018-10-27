@@ -44,10 +44,56 @@
 
 <div class="popupWrapper">
   <div class="popupContainer">
+    <div class="signupBox">
+      <div class="closeToggle">&times;</div>
+      <div class="infoLeft">
+        <img src="{{url_for('static', filename='imgs/logo/verifrLogo.png')}}" alt="logo">
+        <h2>
+          Join the platform and start authenticating today.
+        </h2>
+      </div>
+      <div class="formRight">
+        <form action="">
+          <li>
+            <h3>Sign Up</h3>
+            <sub>Enter the required details and submit</sub>
+          </li>
+          <li>
+            <label for="organisation">Organisation/Institution</label>
+            <input type="text" name="organisation" id="organisation">
+            <i class="fas fa-university"></i>
+          </li>
+          <li>
+            <label for="email">Your Email</label>
+            <input type="email" name="email" id="email">
+            <i class="fas fa-envelope"></i>
+          </li>
+          <li>
+            <label for="password">Your Password</label>
+            <input type="password" name="password" id="password">
+            <i class="fas fa-lock"></i>
+          </li>
+          <li>
+            <label for="password">Confirm Password</label>
+            <input type="password" name="cpassword" id="cpassword">
+            <i class="fas fa-lock"></i>
+          </li>
+          <li>
+            <button type="submit">Sign Up</button>
+          </li>
+          <li>
+            <button type="button" class="loginButton">Log In</button>
+          </li>
+        </form>
+      </div>
+    </div>
     <div class="loginBox">
       <div class="closeToggle">&times;</div>
       <div class="infoLeft">
         <img src="{{url_for('static', filename='imgs/logo/verifrLogo.png')}}" alt="logo">
+        <h2>
+            Welcome Back!
+        </h2>
       </div>
       <div class="formRight">
         <form action="">
@@ -66,10 +112,10 @@
             <i class="fas fa-lock"></i>
           </li>
           <li>
-            <button>Log In</button>
+            <button type="submit">Log In</button>
           </li>
           <li>
-            <button>Sign Up</button>
+            <button type="button" class="signupButton">Sign Up</button>
           </li>
           <li>
             <a href="#">Forgot your password?</a>

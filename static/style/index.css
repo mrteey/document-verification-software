@@ -1293,9 +1293,7 @@ section.footer {
   border-radius: 12px;
   -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   position: relative;
 }
 
@@ -1321,6 +1319,15 @@ section.footer {
   background-size: auto 100%;
   border-radius: 12px 0 0 12px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .popupWrapper .loginBox .infoLeft img {
@@ -1328,6 +1335,16 @@ section.footer {
   top: 0px;
   left: 0px;
   border-radius: 12px 12px 12px 0;
+}
+
+.popupWrapper .loginBox .infoLeft h2 {
+  width: 100%;
+  margin-top: 15%;
+  font-size: 55px;
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .popupWrapper .loginBox .formRight {
@@ -1464,5 +1481,186 @@ section.footer {
   text-align: center;
   font-size: 14px;
   color: #ff3366;
+}
+
+.popupWrapper .signupBox {
+  margin-top: -95%;
+  width: 80%;
+  height: 85%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+  position: relative;
+}
+
+.popupWrapper .signupBox .closeToggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 26px;
+  color: black;
+  padding: 0 5px;
+}
+
+.popupWrapper .signupBox .closeToggle:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.popupWrapper .signupBox .infoLeft {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: url("../imgs/bg/signupBg1.jpg") no-repeat;
+  background-size: auto 100%;
+  border-radius: 12px 0 0 12px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5% 6% 5% 2% !important;
+}
+
+.popupWrapper .signupBox .infoLeft img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 12px 12px 12px 0;
+}
+
+.popupWrapper .signupBox .infoLeft h2 {
+  width: 100%;
+  margin-top: 15%;
+  font-size: 55px;
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.popupWrapper .signupBox .formRight {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.popupWrapper .signupBox .formRight form {
+  background: rgba(255, 255, 255, 0);
+  padding: 12px 18px;
+  width: 75%;
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.popupWrapper .signupBox .formRight form li {
+  width: 90%;
+  min-height: 8%;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.popupWrapper .signupBox .formRight form li:first-child {
+  margin-bottom: 70px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.popupWrapper .signupBox .formRight form li:first-child h3 {
+  color: #ff3366;
+}
+
+.popupWrapper .signupBox .formRight form li:nth-child(2), .popupWrapper .signupBox .formRight form li:nth-child(3), .popupWrapper .signupBox .formRight form li:nth-child(4), .popupWrapper .signupBox .formRight form li:nth-child(5) {
+  margin-bottom: 36px;
+  position: relative;
+  height: 12%;
+  border-bottom: 2px solid #ff3366;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popupWrapper .signupBox .formRight form li:nth-child(2) label, .popupWrapper .signupBox .formRight form li:nth-child(3) label, .popupWrapper .signupBox .formRight form li:nth-child(4) label, .popupWrapper .signupBox .formRight form li:nth-child(5) label {
+  position: absolute;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.popupWrapper .signupBox .formRight form li:nth-child(2) input, .popupWrapper .signupBox .formRight form li:nth-child(3) input, .popupWrapper .signupBox .formRight form li:nth-child(4) input, .popupWrapper .signupBox .formRight form li:nth-child(5) input {
+  z-index: 2;
+  width: 90%;
+  height: 100%;
+  outline: none;
+  font-size: 16px;
+}
+
+.popupWrapper .signupBox .formRight form li:nth-child(2) i, .popupWrapper .signupBox .formRight form li:nth-child(3) i, .popupWrapper .signupBox .formRight form li:nth-child(4) i, .popupWrapper .signupBox .formRight form li:nth-child(5) i {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: block;
+  text-align: center;
+  font-size: 22px;
+}
+
+.popupWrapper .signupBox .formRight form li:nth-child(6), .popupWrapper .signupBox .formRight form li:nth-child(7) {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 20% !important;
+}
+
+.popupWrapper .signupBox .formRight form li:nth-child(6) button, .popupWrapper .signupBox .formRight form li:nth-child(7) button {
+  display: block;
+  width: 60%;
+  height: 100%;
+  outline: none;
+}
+
+.popupWrapper .signupBox .formRight form li:nth-child(6) button:first-child, .popupWrapper .signupBox .formRight form li:nth-child(7) button:first-child {
+  background: #ff3366;
+  color: #fff;
+  font-size: 16px;
+}
+
+.popupWrapper .signupBox .formRight form li:nth-child(7) button:first-child {
+  background: transparent;
+  color: #ff3366;
+  border: 2px solid #ff3366;
 }
 /*# sourceMappingURL=index.css.map */

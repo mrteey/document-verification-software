@@ -1,12 +1,44 @@
 jQuery(document).ready(function($){
+ 
+  // LOGIN TOGGLE
   $('.loginButton').click(function(){
+    $('.signupBox').css({
+      'margin-top': '-95px',
+      'display': 'none'
+    });
     $('.popupWrapper').fadeIn(1000, function(){
-      $('.loginBox').css('margin-top', '0');
+      $('.loginBox').css({
+        'display': 'flex',
+        'margin-top': '0'
+      });
     });
   });
+
+  // SIGNUP TOGGLE
+  $('.signupButton').click(function(){
+    $('.loginBox').css({
+      'display': 'none',
+      'margin-top': '-95px'
+    });
+    $('.popupWrapper').fadeIn(1000, function(){
+      $('.signupBox').css({
+        'display': 'flex',
+        'margin-top': '0'
+      });
+    });
+  });
+
+  // CLOSE BUTTON
   $('.closeToggle').click(function(){
     $('.popupWrapper').fadeOut(500, function(){
-      $('.loginBox').css('margin-top', '0');
+      $('.loginBox').css({
+        'display': 'none',
+        'margin-top': '-95px'
+      });
+      $('.signupBox').css({
+        'display': 'none',
+        'margin-top': '-95px'
+      });
     });
   });
 

@@ -108,6 +108,10 @@ header .logoArea {
   height: 55px;
 }
 
+header .mobileLogo {
+  display: none;
+}
+
 header nav {
   width: 55%;
   height: 55px;
@@ -177,6 +181,10 @@ header .signButtons button:last-child {
 
 header .signButtons button:last-child:hover {
   background: gray;
+}
+
+header .mobileNavToggle {
+  display: none;
 }
 
 section.hero {
@@ -512,6 +520,14 @@ section.partners .partnersContainers .partnersWrap .partnersCTA button p {
   font-size: 22px;
   color: #fff;
   text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+}
+
+section.howitworks {
+  width: 100%;
+  height: 95%;
+  padding: 0;
+  background: url("../imgs/bg/howitworks.png") no-repeat;
+  background-size: 100%;
 }
 
 section.feedBack {
@@ -1662,5 +1678,386 @@ section.footer {
   background: transparent;
   color: #ff3366;
   border: 2px solid #ff3366;
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    padding: 0;
+  }
+  header {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .logoArea {
+    width: auto;
+  }
+  header .logoArea img {
+    width: auto;
+    display: none;
+  }
+  header .logoArea .mobileLogo {
+    display: block;
+  }
+  header nav {
+    display: none;
+  }
+  header .signButtons {
+    display: none;
+  }
+  header .mobileNavToggle {
+    width: 65px;
+    height: 55px;
+    background: #ff3366;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .mobileNavToggle i {
+    font-size: 30px;
+    color: #fff;
+  }
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    background-size: auto 100%;
+    background-position-x: 50%;
+  }
+  .hero {
+    background: rgba(255, 255, 255, 0.7) !important;
+  }
+  .hero h1 {
+    width: 100% !important;
+    font-size: 40px !important;
+    text-align: center;
+    line-height: 40px !important;
+  }
+  .hero h4 {
+    width: 90% !important;
+    margin-bottom: 10px;
+    font-size: 20px !important;
+    text-align: center;
+    font-weight: 400;
+  }
+  .hero .cta {
+    width: 60% !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero .cta button {
+    margin: 0 0 8px 0 !important;
+    padding: 0 !important;
+    height: 50px !important;
+    width: 100% !important;
+    font-size: 18px !important;
+  }
+  .hero .cta button:last-child {
+    margin: 0 !important;
+  }
+  .users {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .users h3 {
+    font-size: 38px;
+    padding: 12px 0;
+    margin-bottom: 6px;
+  }
+  .users .usersWrap {
+    height: auto !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .users .usersWrap .user {
+    width: 90% !important;
+    height: 250px !important;
+    border-radius: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    cursor: pointer;
+    margin-bottom: 40px;
+  }
+  .partners {
+    width: 100%;
+    height: 95%;
+    background-size: contain !important;
+    background-position-y: bottom !important;
+  }
+  .partners .partnersContainers {
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px 40px 10px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+  .partners .partnersContainers h3 {
+    font-size: 38px !important;
+    padding: 12px 0;
+    margin-bottom: 6px;
+    width: 90%;
+  }
+  .partners .partnersContainers .partnersWrap {
+    width: 100% !important;
+    height: 350px !important;
+    display: block !important;
+    -webkit-box-sizing: content-box !important;
+            box-sizing: content-box !important;
+    overflow: hidden;
+  }
+  .partners .partnersContainers .partnersWrap ul {
+    margin-top: 0px;
+    height: 370px !important;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -webkit-box-sizing: content-box !important;
+            box-sizing: content-box !important;
+  }
+  .partners .partnersContainers .partnersCTA {
+    width: 100%;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .partners .partnersContainers .partnersCTA button {
+    height: 100%;
+    padding: 0 20px;
+    border: 2px solid #fff;
+  }
+  .partners .partnersContainers .partnersCTA button p {
+    color: #fff;
+  }
+  .partners .partnersContainers .partnersCTA button:hover {
+    background: rgba(255, 255, 255, 0.4);
+  }
+  .feedBack {
+    overflow: hidden;
+    height: auto !important;
+    background-size: auto 80% !important;
+    background-position-x: 6% !important;
+  }
+  .feedBack .feedbackContainers {
+    width: 100%;
+    height: auto !important;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .feedBack .feedbackContainers .feedbackWrap {
+    width: 100%;
+    height: auto !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .feedBack .feedbackContainers .feedbackWrap form {
+    width: 100% !important;
+    height: auto !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px;
+  }
+  .feedBack .feedbackContainers .feedbackWrap form li {
+    height: 50px;
+  }
+  .feedBack .feedbackContainers .feedbackWrap form li:first-child {
+    width: 100%;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .feedBack .feedbackContainers .feedbackWrap form li:first-child input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    width: 100%;
+    height: 45%;
+    font-size: 16px;
+    outline: none;
+    text-align: center;
+    margin: 0px !important;
+  }
+  .feedBack .feedbackContainers .feedbackWrap form li:first-child input:first-child {
+    margin-bottom: 8px !important;
+  }
+  .feedBack .feedbackContainers .feedbackWrap span {
+    width: 100%;
+    height: auto !important;
+    padding: 50px 0;
+  }
+  .feedBack .feedbackContainers .feedbackWrap span ul li {
+    width: 100%;
+    height: 50px;
+    text-align: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 4px;
+  }
+  .feedBack .feedbackContainers .feedbackWrap span ul li i {
+    font-size: 22px;
+  }
+  .feedBack .feedbackContainers .feedbackWrap span ul li p {
+    font-size: 18px;
+  }
+  .footer {
+    width: 100%;
+    height: auto !important;
+    padding: 0;
+    background: url("../imgs/bg/footerBG.png") no-repeat;
+    background-size: auto auto;
+    background-size: 100%;
+  }
+  .footer .footerWrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-size: auto 50% !important;
+    background-position-y: bottom !important;
+  }
+  .footer .footerWrap .top .links {
+    display: none;
+  }
+  .footer .footerWrap .top .socialIcons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer .footerWrap .mid {
+    height: auto !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 20px;
+  }
+  .footer .footerWrap .mid .subscribe {
+    width: 100%;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .footerWrap .mid .subscribe p {
+    font-size: 16px;
+    padding: 6px;
+  }
+  .footer .footerWrap .mid .subscribe form {
+    width: 100%;
+    height: 100%;
+    border-width: 1px;
+    margin-left: 0px;
+  }
+  .footer .footerWrap .mid .subscribe form input {
+    width: auto !important;
+    -webkit-box-flex: 1 !important;
+        -ms-flex: 1 !important;
+            flex: 1 !important;
+    height: auto !important;
+  }
+  .footer .footerWrap .mid .subscribe form button {
+    width: 50px !important;
+    height: 45px !important;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+  .footer .footerWrap .mid .subscribe form button p {
+    display: none;
+    margin: 0;
+  }
+  .footer .footerWrap .mid .subscribe form button i {
+    font-size: 32px;
+    margin: 0;
+  }
+  .footer .footerWrap .mid .copyRight {
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 40px;
+  }
+  .footer .footerWrap .mid .copyRight p {
+    font-size: 15px;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=index.css.map */

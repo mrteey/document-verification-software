@@ -15,6 +15,7 @@
     <header id="header">
       <div class="logoArea">
         <img src="{{url_for('static', filename='imgs/logo/verifrLogo.png')}}" alt="logo">
+        <img src="{{url_for('static', filename='imgs/logo/verifrLogoMobile.png')}}" alt="logo" class="mobileLogo">
       </div>
       <nav>
         <a href="/">Home</a>
@@ -24,5 +25,8 @@
       <div class="signButtons">
           <button class="signupButton">Join</button>
           <button class="loginButton">Login</button>
+      </div>
+      <div class="mobileNavToggle">
+        <i class="fas fa-bars"></i>
       </div>
     </header>

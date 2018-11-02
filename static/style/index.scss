@@ -115,6 +115,9 @@ header{
     height: 55px;
     // background: $PrimaryColor;
   }
+  .mobileLogo{
+    display: none;
+  }
   nav{
     width: 55%;
     height: 55px;
@@ -160,6 +163,9 @@ header{
       }
       
     }
+  }
+  .mobileNavToggle{
+    display: none;
   }
 }
 
@@ -288,7 +294,6 @@ section.users{
   }
 }
 
-
 // ********* Partners Area ****************
 section.partners{
   width: 100%;
@@ -389,8 +394,15 @@ section.partners{
   }
 }
 
+// ********* How it works Area ****************
+section.howitworks{
+  width: 100%;
+  height: 95%;
+  padding: 0;
+  background: url('../imgs/bg/howitworks.png') no-repeat;
+  background-size: 100%;
+}
 // ********* Feedback Area ****************
-
 section.feedBack{
   width: 100%;
   height: 95%;
@@ -707,8 +719,6 @@ section.AboutTeam{
 
 }
 
-
-
 // ********* FAQs ****************
 section.faqsWrap{
   width: 100%;
@@ -778,7 +788,7 @@ section.faqsWrap{
   }
 }
 
-// ********* Footer Area ****************
+// ********* Footer Area *********
 section.footer{
   width: 100%;
   height: 25%;
@@ -1205,4 +1215,328 @@ section.footer{
     }
   }
 
+}
+
+////////////// MEDIUM SCREEN SIZE /////////////////////////////
+@media only screen and (max-width:900px) {
+
+}
+
+///////////// SMALL SCREEN SIZE /////////////////////////////
+@media only screen and (max-width:600px) {
+  section{
+    padding: 0;
+  }
+  header{
+    height: auto;
+    // border:2px solid purple;
+    display: flex;
+    justify-content: space-between;
+    .logoArea{
+      // border:2px solid green;
+      width: auto;
+      img{
+        // border:2px solid green;
+        width: auto;
+        display: none;
+      }
+      .mobileLogo{
+        display: block;
+      }
+    }
+    nav{
+      display: none;
+    }
+    .signButtons{
+      display: none;
+    }
+    .mobileNavToggle{
+      width:65px;
+      height: 55px;
+      background: $SecondaryColor;
+      display: flex;
+      @include Center();
+      i{
+        font-size: 30px;
+        color: #fff;
+      }
+    }
+  }
+  .wrapper{
+    width:100%;
+    height:100%;
+    background-size: auto 100%;
+    background-position-x: 50%;
+  }
+  .hero{
+    // border:2px solid blue;
+    background: rgba($color: #fff, $alpha: 0.7)!important;
+    h1 {
+      width: 100%!important;
+      font-size: 40px!important;
+      text-align: center;
+      line-height: 40px!important;
+      // border:2px solid red;
+    }
+    h4 {
+      width: 90%!important;
+      margin-bottom: 10px;
+      font-size: 20px!important;
+      text-align: center;
+      font-weight: 400;
+      // border:2px solid red;
+    }
+    .cta{
+        // border:2px solid green;
+        width:60%!important;
+        flex-direction: column;
+       
+        button{
+          margin: 0 0 8px 0!important;
+          padding: 0!important;
+          height: 50px!important;
+          width: 100%!important;
+          font-size: 18px!important;
+          &:last-child{
+            margin: 0!important;
+          }
+        }
+      }  
+  }
+  .users{
+    width: 100%!important;
+    height: auto!important;
+    // border:2px solid green;
+    h3{
+      font-size: 38px;
+      padding: 12px 0;
+      margin-bottom: 6px;
+    }
+    .usersWrap{
+      height: auto!important;
+      // border:2px solid red;
+      flex-direction: column;
+      height: auto;
+      .user {
+        width: 90%!important;
+        height: 250px!important;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        margin-bottom: 40px;
+      }
+    }
+  }
+  .partners {
+    // border:2px solid red;
+    width: 100%;
+    height: 95%;
+    background-size: contain!important;
+    background-position-y: bottom!important;
+    .partnersContainers {
+      // border:2px solid blue!important;
+      width: 100%;
+      height: 100%;
+      padding: 10px 10px 40px 10px!important;
+      display: flex;
+      flex-direction: column;
+      align-items: center!important;
+      justify-content: flex-start!important;
+      h3{
+        font-size: 38px!important;
+        padding: 12px 0;
+        margin-bottom: 6px;
+        width: 90%;
+        // border: 2px solid orange;
+      }
+      .partnersWrap{
+        // border:2px solid red;
+        width:100%!important;
+        height:350px!important;
+        display: block!important;
+        box-sizing: content-box!important;
+        overflow: hidden;
+        ul{
+          margin-top:0px;
+          height:370px!important;
+          // border:2px solid pink;
+          overflow-y: hidden;
+          overflow-x: scroll;
+          box-sizing: content-box!important;
+        }
+      }
+      .partnersCTA{
+        width:100%;
+        height: 50px;
+        display: flex;
+        @include Center();
+        button{
+          height: 100%;
+          padding: 0 20px;
+          border:2px solid #fff;
+          p{
+            color: #fff;
+          }
+          &:hover{
+            background: rgba($color: #fff, $alpha: 0.4)
+          }
+        }
+      }
+    }
+  }
+  .feedBack{
+    // border:2px solid green;
+    overflow: hidden;
+    height: auto!important;
+    background-size: auto 80%!important;
+    background-position-x: 6%!important;
+    .feedbackContainers {
+      width: 100%;
+      height: auto!important;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      .feedbackWrap {
+        width: 100%;
+        height: auto!important;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        padding: 10px;
+        justify-content: space-between;
+        form {
+          // border:2px solid yellow;
+          width: 100%!important;
+          height: auto!important;
+          display: flex;
+          flex-direction: column;
+          margin-top:30px;
+           li {
+            height: 50px;
+              
+            &:first-child{
+              width: 100%;
+              height: 100px;
+              display: flex;
+              flex-wrap: wrap;
+              // border: 2px solid #fff;
+              input {
+                width: 100%;
+                background: rgba(255, 255, 255, 0.2);
+                color: #fff;
+                width: 100%;
+                height: 45%;
+                font-size: 16px;
+                outline: none;
+                text-align: center;
+                margin:0px!important;
+                
+                &:first-child{
+                  margin-bottom:8px!important;
+                }
+              }
+            }
+          }
+        }
+        span{
+          width: 100%;
+          height: auto!important;
+          // border:2px solid lime;
+          padding: 50px 0;
+          ul{
+            li{
+              width:100%;
+              height: 50px;
+              text-align: right;
+              display: flex;
+              @include left();
+              @include vCenter();
+              margin-bottom: 4px;
+              i{
+                font-size: 22px;
+              }
+              p{
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    width: 100%;
+    height: auto!important;
+    padding: 0;
+    background: url("../imgs/bg/footerBG.png") no-repeat;
+    background-size: auto auto;
+    background-size: 100%;
+    .footerWrap {
+      flex-direction: column;
+      background-size: auto 50%!important;
+      background-position-y: bottom!important;
+      .top {
+        .links {
+          display: none;
+        }
+        .socialIcons {
+          justify-content: center;
+          // border:2px dashed #333;
+        }
+      }
+      .mid {
+        height: auto!important;
+        flex-direction: column;
+        margin-top:20px;
+        .subscribe {
+          // border:2px solid red;
+          width: 100%;
+          height: auto;
+          flex-direction: column;
+          p {
+            font-size: 16px;
+            padding: 6px;
+          }
+          form {
+            width: 100%;
+            height: 100%;
+            border-width: 1px;
+            margin-left: 0px;
+            input {
+              width: auto!important;
+              flex:1!important;
+              height: auto!important;
+            }
+            button {
+              width:50px!important;
+              height: 45px!important;
+              flex: none;
+              p{
+                display:none;
+                margin:0;
+              }
+              i{
+                font-size: 32px;
+                margin:0;
+              }
+            }
+          }
+        }
+        .copyRight {
+          width: 100%;
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 40px;
+          p{
+            font-size:15px;
+            text-align: center;
+            // border:1px solid red;
+          }
+        }
+      }
+    }
+  }
 }

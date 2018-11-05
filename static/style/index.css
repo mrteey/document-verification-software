@@ -2132,7 +2132,7 @@ section.footer {
     -webkit-box-align: start !important;
         -ms-flex-align: start !important;
             align-items: flex-start !important;
-    padding-top: 20px !important;
+    padding-top: 0px !important;
   }
   .popupContainer .infoLeft {
     display: none !important;
@@ -2197,9 +2197,10 @@ section.footer {
     color: #fff;
   }
   .signupBox {
-    background-color: white !important;
-    width: 95% !important;
-    height: 96% !important;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0px !important;
   }
   .signupBox li:nth-child(7), .signupBox li:nth-child(6) {
     max-height: 45px !important;
@@ -2208,9 +2209,10 @@ section.footer {
     border: none;
   }
   .loginBox {
-    background-color: white !important;
-    width: 95% !important;
-    height: 96% !important;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0px !important;
   }
   .loginBox li:nth-child(5), .loginBox li:nth-child(4) {
     max-height: 45px !important;

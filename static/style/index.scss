@@ -1610,7 +1610,7 @@ section.footer{
   .popupContainer {
     align-items: flex-start!important;
     // justify-content: center;
-    padding-top: 20px!important;
+    padding-top: 0px!important;
     .infoLeft{
       display: none!important;
     }
@@ -1670,9 +1670,10 @@ section.footer{
     }
   }
   .signupBox {
-    background-color: rgba(255, 255, 255, 1)!important;
-    width: 95%!important;
-    height: 96%!important;
+    background-color: rgba(255, 255, 255, 0.9)!important;
+    width: 100%!important;
+    height: 100%!important;
+    border-radius: 0px!important;
     li{
       &:nth-child(7),&:nth-child(6) {
         max-height: 45px !important;
@@ -1683,9 +1684,10 @@ section.footer{
     }
   }
   .loginBox {
-    background-color: rgba(255, 255, 255, 1)!important;
-    width: 95%!important;
-    height: 96%!important;
+    background-color: rgba(255, 255, 255, 0.9)!important;
+    width: 100%!important;
+    height: 100%!important;
+    border-radius: 0px!important;
     li {
       &:nth-child(5), &:nth-child(4) {
         max-height: 45px !important;

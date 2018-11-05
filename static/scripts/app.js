@@ -98,6 +98,22 @@ jQuery(document).ready(function($){
   });
 
 
+  // MOBILE NAV
+  $('.mobileNavToggle').click(()=>{
+    var navWidth = $('.mobileNav').css('width');
+    if(navWidth == '0px'){
+      $('.mobileNav').css({
+        width: '100%'
+      });
+      $('.mobileNavToggle').html('<i class="fas fa-times"></i>');
+    }else{
+      $('.mobileNav').css({
+        width: '0%'
+      });
+      $('.mobileNavToggle').html('<i class="fas fa-bars"></i>');
+    }
+    
+  });
   // HERO BACKGROUND IMAGE SCROLL
   // $('.wrapper').fullClip({
   //   images: ['/static/imgs/bgScroll/2.jpg', '/static/imgs/bgScroll/3.jpg', '/static/imgs/bgScroll/4.jpg', '/static/imgs/bgScroll/1.jpg'],
@@ -118,17 +134,21 @@ jQuery(document).ready(function($){
   $('.formRight>form>li>input').focus(function(){
     $('.formRight>form>li>label').css({
       'font-size': '12px',
-      'margin-top': '-10%'
+      'padding': '0px',
+      'top': '-32px'
     });
+    // $('.formRight>form>li:first-child').css('display', 'none');
   });
   $('.formRight>form>li>input').blur(function(){
     if($(this).val() == ''){
     $('.formRight>form>li>label').css({
       'font-size': '16px',
-      'margin-top': '0'
+      'padding': '0px 6px',
+      'top': '0px'
     });
     $(this).val('');
     }
+    // $('.formRight>form>li:first-child').css('display', 'block');
   });
 
   // FAQS TOGGLE
